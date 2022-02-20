@@ -1,19 +1,19 @@
 package com.vntu.akit;
 
-public class Traine {
-    private int NumberOfTraine;
+class Train {
+    private int TrainNumber;
     private String start;
     private String finish;
     //гетери
     public int getNumber(){
-        return this.NumberOfTraine;
+        return this.TrainNumber;
     }
     public String getStart(){return this.start;}
     public String getFinish(){return this.finish;}
 
     //сетери
-    public void setNumber(int NumberOfTraine){
-        this.NumberOfTraine = NumberOfTraine;
+    public void setNumber(int TrainNumber){
+        this.TrainNumber = TrainNumber;
     }
     public void setStart(String start){
         this.start = start;
