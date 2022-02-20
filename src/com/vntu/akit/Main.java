@@ -27,7 +27,7 @@ class Traine {
 public class Main {
 
     public static void main(String[] args) {
-        Traine traine = new Traine();
+        Traine traine = new Traine();  // створення екземпляру об'єкта Traine, а змінна traine типу Traine указує на місце в пам'яті де був створенний об'єкт
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть номер потягу: ");
         int number = scanner.nextInt();
