@@ -27,22 +27,22 @@ class Traine {
 public class Main {
 
     public static void main(String[] args) {
-        Traine poizd = new Traine();
+        Traine traine = new Traine();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть номер потягу: ");
         int number = scanner.nextInt();
-        poizd.setNumber(number);
+        traine.setNumber(number);
 
         System.out.println("Введіть стартову точку: ");
         String start = scanner.next();
-        poizd.setStart(start);
+        traine.setStart(start);
 
         System.out.println("Введіть кінцеву точку: ");
         String finish = scanner.next();
-        poizd.setFinish(finish);
+        traine.setFinish(finish);
 
-        System.out.println("Номер поїзду: " + poizd.getNumber());
-        System.out.println("Стартова точка: " + poizd.getStart());
-        System.out.println("Кінцева точка: " + poizd.getFinish());
+        System.out.println("Номер поїзду: " + traine.getNumber());
+        System.out.println("Стартова точка: " + traine.getStart());
+        System.out.println("Кінцева точка: " + traine.getFinish());
     }
 }
