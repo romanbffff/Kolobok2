@@ -44,5 +44,6 @@ public class Main {
         System.out.println("Номер поїзду: " + poizd.getNumber());
         System.out.println("Стартова точка: " + poizd.getStart());
         System.out.println("Кінцева точка: " + poizd.getFinish());
+        System.out.println("For Git");
     }
 }
