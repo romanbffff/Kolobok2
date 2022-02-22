@@ -6,12 +6,12 @@ class Train {
     private String finish;
 
     //геттери
-    public int getNumber(){
+     /* public int getNumber(){
         return this.TrainNumber;
     }
     public String getStart(){return this.start;}
     public String getFinish(){return this.finish;}
-
+      */
     //сеттери
     public void setNumber(int TrainNumber){
         this.TrainNumber = TrainNumber;
