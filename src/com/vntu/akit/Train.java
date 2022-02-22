@@ -4,14 +4,15 @@ class Train {
     private int TrainNumber;
     private String start;
     private String finish;
-    //гетери
+
+    //геттери
     public int getNumber(){
         return this.TrainNumber;
     }
     public String getStart(){return this.start;}
     public String getFinish(){return this.finish;}
 
-    //сетери
+    //сеттери
     public void setNumber(int TrainNumber){
         this.TrainNumber = TrainNumber;
     }
