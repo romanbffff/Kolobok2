@@ -18,8 +18,6 @@ public class Main {
         String finish = scanner.next();
         train.setFinish(finish);
 
-        System.out.println("Номер потягу: " + train.getNumber());
-        System.out.println("Стартова точка: " + train.getStart());
-        System.out.println("Кінцева точка: " + train.getFinish());
+        train.print();
     }
 }
