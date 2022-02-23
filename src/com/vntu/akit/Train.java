@@ -1,9 +1,11 @@
 package com.vntu.akit;
+import java.util.Scanner;
 
 class Train {
     private int TrainNumber;
     private String start;
     private String finish;
+    // private double cost1KmOfRoad; // Заготовка під ЛБ2
 
     //геттери
      /* public int getNumber(){
@@ -22,6 +24,25 @@ class Train {
     public void setFinish(String finish) {
         this.finish = finish;
     }
+
+     public Train() {
+           Scanner scanner = new Scanner(System.in);
+           System.out.println("Введіть номер потягу: ");
+           int number = scanner.nextInt();
+           setNumber(number);
+
+           System.out.println("Введіть стартову точку: ");
+           String start = scanner.next();
+           setStart(start);
+
+           System.out.println("Введіть кінцеву точку: ");
+           String finish = scanner.next();
+           setFinish(finish);
+       }
+          // public Train(int TrainNumber, String start, String finish) {
+          // this.TrainNumber = TrainNumber;
+          // this.start = start;
+          // this.finish = finish; }
 
     void print(){
         System.out.println("Номер потягу: " + this.TrainNumber);
