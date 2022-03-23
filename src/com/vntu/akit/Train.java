@@ -1,4 +1,6 @@
 package com.vntu.akit;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 class Train {
@@ -8,12 +10,10 @@ class Train {
     // private double cost1KmOfRoad; // Заготовка під ЛБ2
 
     //геттери
-     /* public int getNumber(){
-        return this.TrainNumber;
-    }
-    public String getStart(){return this.start;}
-    public String getFinish(){return this.finish;}
-      */
+//    public int getNumber(){ return this.TrainNumber; }
+//    public String getStart(){ return this.start; }
+//    public String getFinish(){ return this.finish; }
+
     //сеттери
     public void setNumber(int TrainNumber){
         this.TrainNumber = TrainNumber;
@@ -25,24 +25,29 @@ class Train {
         this.finish = finish;
     }
 
-     public Train() {
-           Scanner scanner = new Scanner(System.in);
-           System.out.println("Введіть номер потягу: ");
-           int number = scanner.nextInt();
-           setNumber(number);
+//     public Train() {
+//           Scanner scanner = new Scanner(System.in);
+//           System.out.println("Введіть номер потягу: ");
+//           int number = scanner.nextInt();
+//           setNumber(number);
+//
+//           System.out.println("Введіть стартову точку: ");
+//           String start = scanner.next();
+//           setStart(start);
+//
+//           System.out.println("Введіть кінцеву точку: ");
+//           String finish = scanner.next();
+//           setFinish(finish);
+//       }
+     public Train(int TrainNumber, String start, String finish) {
+        this.TrainNumber = TrainNumber;
+        this.start = start;
+        this.finish = finish;
+     }
 
-           System.out.println("Введіть стартову точку: ");
-           String start = scanner.next();
-           setStart(start);
-
-           System.out.println("Введіть кінцеву точку: ");
-           String finish = scanner.next();
-           setFinish(finish);
-       }
-          // public Train(int TrainNumber, String start, String finish) {
-          // this.TrainNumber = TrainNumber;
-          // this.start = start;
-          // this.finish = finish; }
+//     public Train(int CostFirstRoute, int CostSecondRoute, double CostOfRoute) throws FileNotFoundException {
+//
+//     }
 
     void print(){
         System.out.println("Номер потягу: " + this.TrainNumber);
