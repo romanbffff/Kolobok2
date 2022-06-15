@@ -1,18 +1,15 @@
 package com.vntu.akit;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 class Train {
-    private int TrainNumber;
-    private String start;
-    private String finish;
+    protected int TrainNumber;
+    protected String start;
+    protected String finish;
     // private double cost1KmOfRoad; // Заготовка під ЛБ2
 
     //геттери
-//    public int getNumber(){ return this.TrainNumber; }
-//    public String getStart(){ return this.start; }
-//    public String getFinish(){ return this.finish; }
+    public int getNumber(){ return this.TrainNumber; }
+    public String getStart(){ return this.start; }
+    public String getFinish(){ return this.finish; }
 
     //сеттери
     public void setNumber(int TrainNumber){
